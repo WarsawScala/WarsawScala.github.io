@@ -12,12 +12,21 @@
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href=.."/css/main.css">
 
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   </head>
 
   <body>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));</script>
 
     <div class="container">
       <div class="header">
@@ -25,16 +34,39 @@
           <li><a href="#info">Info</a></li>
           <li><a href="#meetings">Meetings</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="/index.html"><strong>Polski</strong></a></li>
+          <li><a href="../index.html"><strong>Polski</strong></a></li>
         </ul>
-        <h3 class="text-muted"><img src="/gfx/logo.jpg" width="64" height="64"/>WarszawScala</h3>
+        <h3 class="text-muted"><img src="../gfx/logo.jpg" width="64" height="64"/>WarszawScala</h3>
       </div>
+
+    <div id="facebook" class="fb-like-box col-xs-12 col-md-4 pull-right"
+         data-href="https://www.facebook.com/pages/WarszawScala/653694058092233"
+         data-colorscheme="light" data-show-faces="true" data-header="true"
+         data-stream="true" data-show-border="true">
+    </div>
+
+    <div class="col-xs-12 col-md-8">
+
       <div id="info">
         <div class="col-lg-12">
           <h3>Info</h3>
           <strong>WarszawScala</strong> is Warsaw user group of <a href="http://www.scala-lang.org/">Scala</a> programming language. The main purpose of the group is to connect local community of Scala programmers. We learn together and exchange opinions about fascinating world of functional programming ;-). We coordinate meetings via <a href="http://www.meetup.com/WarszawScaLa">Meetup group</a>, we discuss online using <a href="https://groups.google.com/forum/#!forum/scalania">Google group</a>.
         </div>
       </div>
+        <div id="contact">
+            <div class="col-lg-12">
+                <h3>Contact</h3>
+                <ul>
+                    <li><a href="http://www.meetup.com/WarszawScaLa">Meetup group</a></li>
+                    <li><a href="https://groups.google.com/forum/#!forum/scalania">Google group</a></li>
+                    <li><a href="https://twitter.com/WarszawScaLa" class="twitter-follow-button" data-show-count="true">Follow @WarszawScaLa</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
+                    <li><iframe src="http://ghbtns.com/github-btn.html?user=WarszawScala&repo=WarszawScala.github.io&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe></li>
+                    <li><a href="http://lukaszsowa.pl">Contact author of this page</a></li>
+                </ul>
+            </div>
+        </div>
+
       <div id="meetings">
         <div class="col-lg-12">
           <h3>Meetings</h3>
@@ -322,19 +354,7 @@
         </div>
       </div>
 
-      <div id="contact">
-  <div class="col-lg-12">
-    <h3>Contact</h3>
-    <ul>
-      <li><a href="http://www.meetup.com/WarszawScaLa">Meetup group</a></li>
-      <li><a href="https://groups.google.com/forum/#!forum/scalania">Google group</a></li>
-      <li><a href="https://twitter.com/WarszawScaLa" class="twitter-follow-button" data-show-count="true">Follow @WarszawScaLa</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></li>
-      <li><iframe src="http://ghbtns.com/github-btn.html?user=WarszawScala&repo=WarszawScala.github.io&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe></li>
-      <li><a href="http://lukaszsowa.pl">Contact author of this page</a></li>
-    </ul>
-  </div>
-      </div>
+    </div>
     </div>
   </body>
 </html>
